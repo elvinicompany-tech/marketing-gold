@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MARKETING GOLD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('705d03a9-9d37-4cdd-9f66-e81c947c7a27.png') center center / cover no-repeat fixed;
+      background-color: #000;
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #FFD700;
+      text-transform: uppercase;
+      text-shadow: 0 0 15px #FFD700, 0 0 30px #FFD700;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #FFD700; }
+      to { text-shadow: 0 0 30px #FFD700, 0 0 60px #FFD700; }
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+      max-width: 700px;
+    }
+    .video-container {
+      margin-top: 40px;
+      border: 3px solid #FFD700;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .btn-whatsapp {
+      display: none; /* inicialmente invisível */
+      background: #25D366;
+      color: #fff;
+      padding: 18px 35px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-decoration: none;
+      margin-top: 40px;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 0 15px #25D366, 0 0 30px #25D366;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 15px #25D366; }
+      50% { transform: scale(1.1); box-shadow: 0 0 30px #25D366; }
+      100% { transform: scale(1); box-shadow: 0 0 15px #25D366; }
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.7);
+      border-top: 2px solid #FFD700;
+    }
+    footer p { margin: 5px 0; }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>MARKETING GOLD</h1>
+    <p>O CURSO DEFINITIVO PARA VOCÊ DOMINAR O MARKETING DIGITAL.<br>
+    ASSISTA AO VÍDEO ABAIXO E DEPOIS CHAME NO WHATSAPP.</p>
+    <div class="video-container">
+      <iframe width="100%" height="400" src="Video/Zoom+da+te (1).mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a href="https://wa.me/5599999999999?text=Tenho%20interesse%20no%20curso%20Marketing%20Gold" target="_blank" class="btn-whatsapp" id="btn-whatsapp">📲 CHAME AGORA</a>
+  </section>
+
+  <footer>
+    <p>© 2025 MARKETING GOLD</p>
+    <p><a href="#" style="color:#FFD700;">Política de Privacidade</a></p>
+  </footer>
+
+  <script>
+    // Mostrar botão apenas após 3 minutos (180 segundos)
+    setTimeout(() => {
+      document.getElementById('btn-whatsapp').style.display = 'inline-block';
+    }, 180000);
+  </script>
+</body>
+</html>
